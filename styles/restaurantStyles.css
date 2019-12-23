@@ -17,3 +17,11 @@ header, footer {
 .nav a:hover{
     font-weight: bold;
 }
+
+a{
+    color:  #EDB5BF;
+}
+
+a:hover{
+    color: white;
+}
