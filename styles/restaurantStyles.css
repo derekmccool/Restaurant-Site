@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+main{
+    font-family: 'Satisfy', cursive;
+}
+header, footer {
+    background-color: #4D6D9A;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+
+}
+.nav{
+    font-size: 32px;
+}
+
+.nav a:hover{
+    font-weight: bold;
+}

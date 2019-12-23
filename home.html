@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <!--
 Name: Derek McCool
-Date Created: 12/18/2019
+Date Created: 12/23/2019
 Most recent revision:/
 -->
 <html lang="en">
 
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Maye's Colombian Creations</title>
-        <link href="styles.css" rel="stylesheet" type="text/css"/>
+<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
-        <header>
-            <h1>Maye's Colombian Creations</h1>
-            <hr>
-        </header>
-        <nav>
-            <ul style="list-style-type: none;">
-                <li style="display:inline;"><a href="home.html">Home</a></li>
-                <li style="display:inline;"><a href="menu.html">Menu</a></li>
-                <li style="display:inline;"><a href="contact.html">Contact</a></li>
+        <main>   
+            <header>
+                <h1>Maye's Colombian Creations</h1>
+            </header>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                <a class="nav-link active" href="home.html" style="color:#EDB5BF;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html" style="color: #5f6366;">Menu</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: #5f6366;">Contact</a>
+                </li>
             </ul>
-            <hr>
-        </nav>
 
-        <img src="images/arepas.jpg" alt="Picture of Colombian Arepas">
-        <p>Maye's Colombian Creations provides the taste of Colombia with an American spin.  
-            Chef Maye's personal creations will bring a comfortable taste of home to Colombian Americans
-            and a pleasant new experience for those who have never ventured in Colombian cuisine.  
-            Located in the heart of the city, this is where you will want to be on Merengue Mondays!
-        </p>
-    
+            <img src="images/arepas.jpg" alt="Picture of Colombian Arepas" style="display:block; width: 33%; margin-left:auto; margin-right:auto; border-radius: 10px; box-shadow: 0 4px 8px black;">
+            <p>Maye's Colombian Creations provides the taste of Colombia with an American spin.  
+                Chef Maye's personal creations will bring a comfortable taste of home to Colombian Americans
+                and a pleasant new experience for those who have never ventured in Colombian cuisine.  
+                Located in the heart of the city, this is where you will want to be on Merengue Mondays!
+
+            </p>
+
+            <footer>
+                <h3><address>123 Fake St, Dallas, TX 75228</address></h3>
+                <h3><address>555-555-5555</address></h3>
+            </footer>
+
+
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </main>   
     </body>
 
 
-    <footer>
-        <hr>
-        <address>123 Fake St, Dallas TX 75228</address>
-        <address>555-555-5555</address>
-        <hr>
-    </footer>
+
 
 
 

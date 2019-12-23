@@ -1,62 +1,334 @@
 <!DOCTYPE html>
 <!--
 Name: Derek McCool
-Date Created: 12/18/2019
+Date Created: 12/23/2019
 Most recent revision:/
 -->
 <html lang="en">
 
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Maye's Colombian Creations</title>
-        <link href="styles.css" rel="stylesheet" type="text/css"/>
+<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .container{
+                background-color: #C4DBF6;
+                box-shadow: 0 4px 8px black;
+                padding: 0;
+            }
+            .container h3{
+                color: #EDB5BF;
+                text-shadow: 1.1px 1.1px #5f6366;
+            }
+            .row{
+                text-align: center;
+            }
+  
+            .menu-category{
+                width: 100%;
+                background-color: #4D6D9A;
+                padding: 1em;
+                box-shadow: 0 3px 5px #5f6366;
+            }
+            .menu-category h2{
+                color: #EDB5BF;
+            }
+            .table tr, td {
+                text-align: left;
+                font-size: 16px;
+                
+            }
+            .table td{
+                border-bottom: 1px solid #5f6366;
+            }
+            
+            .table{
+                margin:auto;
+                width: 70%;
+            }
+        
+        </style>
     </head>
     <body>
-        
-        <header>
-            <h1>Maye's Colombian Creations</h1>
-            <hr>
-        </header>
-        <nav>
-            <ul style="list-style-type: none;">
-                <li style="display:inline;"><a href="home.html">Home</a></li>
-                <li style="display:inline;"><a href="menu.html">Menu</a></li>
-                <li style="display:inline;"><a href="contact.html">Contact</a></li>
+        <main>  
+            <header>
+                <h1>Maye's Colombian Creations</h1>
+            </header>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color:#5f6366;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="menu.html" style="color:#EDB5BF;">Menu</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color:#5f6366;">Contact</a>
+                </li>
             </ul>
-            <hr>
-        </nav>
-
-        <img src="images/arepas.jpg" alt="Picture of Colombian Arepas">
-        <section>
-            <article>
-                <p><b>Arepas</b></p>
-                <p>Colombian style corn flower arepas filled with mozzarella cheese.</p>
-                <p><i>$5.65</i></p>
-            </article>
-        </section>
-        <section>
-            <article>
-                <p><b>Arepas</b></p>
-                <p>Colombian style corn flower arepas filled with mozzarella cheese.</p>
-                <p><i>$5.65</i></p>
-            </article>
-        </section>
-        <section>
-            <article>
-                <p><b>Arepas</b></p>
-                <p>Colombian style corn flower arepas filled with mozzarella cheese.</p>
-                <p><i>$5.65</i></p>
-            </article>
-        </section>
-    
+            </br>
+            <h1 style="text-align: center;"><i>M<u>enu</u></i></h1>
+            <div class="container">
+                <div class="menu-category">
+                    <h2>Appetizers</h2>
+                </div>
+                           
+                <div class ="row">
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Arepas</b></h3>
+                        <h4>Colombian style corn flower arepas filled with mozzarella cheese.</h4>
+                        <h5><i>$5.65</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Yuca Fries</b></h3>
+                        <h4>Lightly fried yuca served with a garlic mojo dip.</h4>
+                        <h5><i>$4.50</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Empanadas</b></h3>
+                        <h4>Corn dough wrapped potato and beef fried served with homemade picante salsa.</h4>
+                        <h5><i>$6.25</i></h5>
+                    </div>
+                </div>
+            
+                <div class ="row">
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Maduro con Queso</b></h3>
+                        <h4>Fried sweet plaintain topped with guava and mozarella cheese</h4>
+                        <h5><i>$3.25</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Salchipapa</b></h3>
+                        <h4>French fries topped with fried annd sliced hot dog.</h4>
+                        <h5><i>$2.75</i></h5>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h2>Soups</h2>
+                </div>
+                <div class ="row">
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Mondogo</b></h3>
+                        <h4>Beef tripe slow-cooked with garlic, celery, carrots onions and garlic.  Servered with a side of rice and sliced avocado.</h4>
+                        <h5><i>$9.65</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Sancocho</b></h3>
+                        <h4>Traditional chicken soup served with large pieces of ptato, plantains and scallions.  Topped with cilantro.</h4>
+                        <h5><i>$8.45</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Ajiaco</b></h3>
+                        <h4>This soup is a Bogatá favorite.  Made with chicken, a variety of potatoes and galinsoga parviflora.</h4>
+                        <h5><i>$7.25</i></h5>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h2>Fish</h2>
+                </div>
+                <div class ="row">
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Catfish</b></h3>
+                        <h4>Breaded catfish served with rice, avacodo and beans.</h4>
+                        <h5><i>$12.25</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Tilapia</b></h3>
+                        <h4>Whole fried tilapia served with rice, fried plantain and side salad.</h4>
+                        <h5><i>$13.45</i></h5>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h2>Beef</h2>
+                </div>
+                <div class ="row">
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Steak and Eggs</b></h3>
+                        <h4>Grilled steak served on top of a bed of fried onions, topped with two fried eggs.  Served with a side of beans and rice.</h4>
+                        <h5><i>$14.65</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Beef Tongue</b></h3>
+                        <h4>Sauteed beef tongue served with yucca and potatoes.</h4>
+                        <h5><i>$12.75</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Breaded Steak</b></h3>
+                        <h4>Charcoal breaded steak served with your choice of french fries or yucca.</h4>
+                        <h5><i>$10.50</i></h5>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h2>Chicken</h2>
+                </div>
+                <div class ="row">
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Grilled Chicken Breast</b></h3>
+                        <h4>Seasoned grilled chicken breast served with a side of avacodo and rice.</h4>
+                        <h5><i>$11.65</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Chicken Tamales</b></h3>
+                        <h4>Chicken Tamales wrapped in banana leaf, with corn and rice dough.</h4>
+                        <h5><i>$9.85</i></h5>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <h3><b>Chicken Salad</b></h3>
+                        <h4>Grilled chicken on top of mixed greens, cabbage, tomato and avacado.  Served with your choice of dressing.</h4>
+                        <h5><i>$7.75</i></h5>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h2>Beverages</h2>
+                </div>
+                </br>
+                <h3 style="text-align: center;"><b>Non-Alcoholic</b></h3>
+                <div class ="row">
+                    <div class="col-lg-6 mt-5">
+                        <table class="table table-borderless table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Soft Drinks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Root Beer</td>
+                                    <td>$3.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Bottled Water</td>
+                                    <td>$1.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Lemonade</td>
+                                    <td>$1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Iced Tea</td>
+                                    <td>$1.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Pony Malta</td>
+                                    <td>$2.25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-6 mt-5">
+                        <table class="table table-borderless table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col-6">Juices</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Blackberry</td>
+                                    <td>$3.75</td>
+                                </tr>
+                                <tr>
+                                    <td>Strawberry</td>
+                                    <td>$3.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Tamarillo</td>
+                                    <td>$4.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Guanabana</td>
+                                    <td>$4.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Guava</td>
+                                    <td>$4.50</td>
+                                </tr>
+        
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </br>
+                <h3 style="text-align: center;"><b>Alcohol</b></h3>
+                <div class ="row">
+                    <div class="col-lg-6 mt-3">
+                        <table class="table table-borderless table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Bottled Beer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Corona</td>
+                                    <td>$3.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Heineken</td>
+                                    <td>$3.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Aguila</td>
+                                    <td>$5.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Poker</td>
+                                    <td>$5.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Costeña</td>
+                                    <td>$5.25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <table class="table table-borderless table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Wine</th>
+                                    <th scope="col">Glass</th>
+                                    <th scope="col">Bottle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Merlot</td>
+                                    <td>$5.00</td>
+                                    <td>$20.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sanson</td>
+                                    <td>$6</td>
+                                    <td>$24.00</td>
+                                </tr>
+                                <tr>
+                                    <td>White Zinfandel</td>
+                                    <td>$5.00</td>
+                                    <td>$20.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Cabernet Sauvignon</td>
+                                    <td>$8.00</td>
+                                    <td>$34.00</td>
+                                </tr>
+                     
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </br>
+            <footer>
+                <address>123 Fake St, Dallas, TX 75228</address>
+                <address>555-555-5555</address>
+            </footer>
+        </main>   
     </body>
-
-
-    <footer>
-        <hr/>
-        <address>123 Fake St, Dallas TX 75228</address>
-        <address>555-555-5555</address>
-        <hr/>
-    </footer>
 
 
 </html>
