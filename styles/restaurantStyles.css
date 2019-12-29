@@ -1,27 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif&display=swap');
 main{
-    font-family: 'Satisfy', cursive;
+    font-family: 'Inria Serif', serif;
+    background-color: rgb(24, 16, 22);
+    margin-top: 0;
 }
+
 header, footer {
-    background-color: #4D6D9A;
+    background-color: #721030;
     color: white;
     text-align: center;
     padding: 1em 1em;
-
 }
+
+
+h1{
+    font-size: 55px;
+}
+
+h2{
+    font-size: 44px; 
+}
+
+h1,
+h2,
 .nav{
-    font-size: 32px;
-}
-
-.nav a:hover{
-    font-weight: bold;
+    color:  #EDB5BF;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
 }
 
 a{
     color:  #EDB5BF;
 }
 
+
 a:hover{
     color: white;
+    font-weight: bold;
 }
+
+.nav{
+    font-size: 32px;
+    background-color: white;
+}
+
+.nav a:hover{
+    font-weight: bold;
+}
+.nav a:visited{
+    color: #721030;
+}
+
+
+  
+

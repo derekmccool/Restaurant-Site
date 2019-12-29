@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
 Name: Derek McCool
-Date Created: 12/23/2019
-Most recent revision:/
+Date Created: 12/29/2019
+Most recent revision:Updated Styling, fixed typos, added comments.
 -->
 <html lang="en">
 
@@ -17,12 +17,12 @@ Most recent revision:/
         <script src="https://kit.fontawesome.com/087cad2d66.js" crossorigin="anonymous"></script>
         <style>
             .container{
-                background-color: #C4DBF6;
+                background-color: rgb(241, 221, 225);
                 box-shadow: 0 4px 8px black;
                 padding: 0;
             }
             .container h3{
-                color: #EDB5BF;
+                color: #721030;
                 text-shadow: 1.1px 1.1px #5f6366;
             }
             .row{
@@ -31,9 +31,9 @@ Most recent revision:/
   
             .menu-category{
                 width: 100%;
-                background-color: #4D6D9A;
+                background-color: #721030;;
                 padding: 1em;
-                box-shadow: 0 3px 5px #5f6366;
+                box-shadow: 0 3px #5f6366;
             }
             .menu-category h2{
                 color: #EDB5BF;
@@ -63,17 +63,19 @@ Most recent revision:/
 
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                <a class="nav-link" href="home.html" style="color:#5f6366;">Home</a>
+                <a class="nav-link" href="home.html">
+                    <i class="fas fa-home"></i>
+                </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="menu.html" style="color:#EDB5BF;">Menu</a>
+                    <a class="nav-link active" href="menu.html" style="color:  rgb(90, 79, 90); border-radius: 0px;">Menu</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="contact.html" style="color:#5f6366;">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
             </br>
-            <h1 style="text-align: center;"><i>M<u>enu</u></i></h1>
+            <h1 style="text-align: center;">Menu</h1>
             <div class="container">
                 <div class="menu-category">
                     <h2>Appetizers</h2>
@@ -95,7 +97,7 @@ Most recent revision:/
                         <h4>Corn dough wrapped potato and beef fried served with homemade picante salsa.</h4>
                         <h5><i>$6.25</i></h5>
                     </div>
-                </div>
+                </div><!--row-->
             
                 <div class ="row">
                     <div class="col-lg-4 mt-5">
@@ -108,7 +110,7 @@ Most recent revision:/
                         <h4>French fries topped with fried annd sliced hot dog.</h4>
                         <h5><i>$2.75</i></h5>
                     </div>
-                </div>
+                </div><!--row-->
                 
                 <div class="menu-category">
                     <h2>Soups</h2>
@@ -129,7 +131,7 @@ Most recent revision:/
                         <h4>This soup is a Bogatá favorite.  Made with chicken, a variety of potatoes and galinsoga parviflora.</h4>
                         <h5><i>$7.25</i></h5>
                     </div>
-                </div>
+                </div><!--row-->
                 <div class="menu-category">
                     <h2>Fish</h2>
                 </div>
@@ -144,7 +146,7 @@ Most recent revision:/
                         <h4>Whole fried tilapia served with rice, fried plantain and side salad.</h4>
                         <h5><i>$13.45</i></h5>
                     </div>
-                </div>
+                </div><!--row-->
                 <div class="menu-category">
                     <h2>Beef</h2>
                 </div>
@@ -164,7 +166,7 @@ Most recent revision:/
                         <h4>Charcoal breaded steak served with your choice of french fries or yucca.</h4>
                         <h5><i>$10.50</i></h5>
                     </div>
-                </div>
+                </div><!--row-->
                 <div class="menu-category">
                     <h2>Chicken</h2>
                 </div>
@@ -184,7 +186,7 @@ Most recent revision:/
                         <h4>Grilled chicken on top of mixed greens, cabbage, tomato and avacado.  Served with your choice of dressing.</h4>
                         <h5><i>$7.75</i></h5>
                     </div>
-                </div>
+                </div><!--row-->
                 <div class="menu-category">
                     <h2>Beverages</h2>
                 </div>
@@ -221,7 +223,7 @@ Most recent revision:/
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div><!--table div-->
                     <div class="col-lg-6 mt-5">
                         <table class="table table-borderless table-sm">
                             <thead>
@@ -253,7 +255,7 @@ Most recent revision:/
         
                             </tbody>
                         </table>
-                    </div>
+                    </div><!--table div-->
                 </div>
                 </br>
                 <h3 style="text-align: center;"><b>Alcohol</b></h3>
@@ -288,7 +290,7 @@ Most recent revision:/
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div><!--table div-->
                     <div class="col-lg-6 mt-3">
                         <table class="table table-borderless table-sm">
                             <thead>
@@ -321,7 +323,7 @@ Most recent revision:/
                                 </tr>
                      
                             </tbody>
-                        </table>
+                        </table><!--table div-->
                     </div>
                 </div>
             </div>
@@ -336,7 +338,7 @@ Most recent revision:/
                 </div>
                 <div class="col-lg-4 ">
                     <h3><b>Hours</b></h3>
-                    <h5>Mon - Fri 11 AM - 1 AM</h5>
+                    <h4>Mon - Fri 11 AM - 1 AM</h4>
                     <h4>Sat - 1 PM - 2 AM</h4>
                     <h4>Sun -Closed-</h4>
                 </div>
@@ -347,7 +349,7 @@ Most recent revision:/
                     <h4><a href="#"><i class="fab fa-instagram"></i></a></h4>
                 </div>
 
-            </div>
+            </div><!--row-->
         </footer>
         </main>   
     </body>
